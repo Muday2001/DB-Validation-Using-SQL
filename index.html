@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Welcome </title>
+		<script LANGUAGE="JavaScript">
+	//executed success fully
+	  //var users = [{ uname: 'Sai', pwd1: 'Sai1' },{ uname: 'Ramesh', pwd1: 'Ramesh1' },
+     //{ uname: 'Rajitha', pwd1: 'Rajitha1' }];
+         
+    function login(form)
+	{
+		var name = document.getElementById("name").value;
+		var pass = document.getElementById("pass").value;
+		if(name =='')
+		{
+			alert("please enter user name.");
+			return false;
+		}
+		else if(pass=='')
+		{
+        	alert("enter the password");
+			return false;
+		}
+		else
+		{
+		  //alert("please fill corect details");
+		  //window.location.href =ul;
+		 //const myWindow.document.open(+<form method = post action = "http://192.168.43.42:8181/test/Jdbin.jsp"); 
+		  //document.writeln("<form method = post action = http://192.168.43.42:8181/uservaljsp/Jdbin.jsp ">
+		}
+	}
+		function clearFunc()
+	{
+		document.getElementById("email").value="";
+		document.getElementById("pwd1").value="";
+	}	
+		</script>
+    </head>
+    <body onkeydown="return(event.keyCode==154)">
+	<center>
+        <form method = "post" onSubmit="return login(this)" action ="Jspdb.jsp">
+            <fieldset style="width:23%; background-color:lightblue">
+                <h3><center> Login Page</center></h3>
+                <hr>
+                <table>
+                    <tr>
+                        <td>Username:</td>
+                        <td> <input type = "text" name = "name" id="name"></td>
+                    </tr>
+                    <tr>
+                        <td>Password:</td>
+                        <td><input type = "password" name = "pass" id="pass"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        
+						<td><input type = "submit" value="Login" name = "s1" onClick ="login(this.form)">
+                        <input type="reset" value="Reset" onclick="clearFunc()"> </td>
+				 </tr>
+                </table>
+            </fieldset>
+        </form>
+		
+        <a href="jdbs.jsp">Get all user detail</a><br>
+		<a href="ins.html">New User?</a>
+           <center>
+	</body>
+</html>
